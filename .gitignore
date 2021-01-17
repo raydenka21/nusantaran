@@ -1,0 +1,17 @@
+/vendor
+/.idea
+Homestead.json
+Homestead.yaml
+.env
+
+vendor
+.idea
+*.pyc
+.vscode
+.DS_Store
+app/.DS_Store
+public/.DS_Store
+public/meta_images/.DS_Store
+
+
+
