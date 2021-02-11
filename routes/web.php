@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +18,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $data['info'] = null;
     $data['content'] = 'home';
+
+    $data['header'] = 'oi';
     return view('layout/wrapper',$data);
 
 });
+
+
+Route::get('/users', [UserController::class, 'index']);
